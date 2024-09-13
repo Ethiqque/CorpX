@@ -1,4 +1,4 @@
-# CorporatiIonX
+# CorporationX
 
 CorporationX (CorpX) is a social network tailored for management and fundraising startups, offering centralized communication and collaboration tools. The platform provides real-time notifications, data-driven analytics, and efficient link management, enabling seamless business operations. With features like an infinite-availability news feed, activity achievements, and a dual message payment system, CorpX drives productivity for its users.
 
