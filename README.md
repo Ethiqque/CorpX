@@ -33,16 +33,9 @@ CorpX enhances startup fundraising by facilitating seamless team coordination an
 
 ## Technologies Used
 
-- Java
-- Redis
-- Github CI
-- GCP & AWS
-- Amazon S3
-- Docker
-- Spring Framework
-- PostgreSQL
-- Kafka
-etc.
+- Java, Spring Framework, Kafka, Amazon Web Services (AWS), Docker, Google Cloud Platform (GCP), Kubernetes, Redis,  Amazon S3 Cloud, CI/CD, Hibernate, Multithreading, Liquibase,REST API
+
+## Project Structure
 
 ```plaintext
 ├── .idea  
