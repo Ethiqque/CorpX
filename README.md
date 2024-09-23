@@ -43,3 +43,271 @@ CorpX enhances startup fundraising by facilitating seamless team coordination an
 - PostgreSQL
 - Kafka
 etc.
+
+```plaintext
+├── .idea  
+├── achievement_service/
+│   ├── gradle/wrapper/
+│   ├── .gitignore
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── build.gradle.kts
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── settings.gradle.kts
+│   ├── src/
+│       ├── main/
+│       │   ├── java/
+│       │       └── com/
+│       │           └── achievement/
+│       │               ├── cache/
+│       │               ├── client/
+│       │               ├── config/
+│       │               ├── controller/
+│       │               ├── dto/
+│       │               ├── event/
+│       │               ├── exception/
+│       │               ├── filter/
+│       │               ├── handler/
+│       │               ├── listener/
+│       │               ├── mapper/
+│       │               ├── model/
+│       │               ├── publisher/
+│       │               ├── repository/
+│       │               ├── service/
+│       │               └── AchievementServiceApp.java
+│       └── test/
+│  
+├── analytics_service/
+│   ├── gradle/wrapper/
+│   ├── .gitignore
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── build.gradle.kts
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── settings.gradle.kts
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/
+│   │   │   │       └── elevatefi/
+│   │   │   │           ├── cache/
+│   │   │   │           ├── client/
+│   │   │   │           ├── config/
+│   │   │   │           ├── controller/
+│   │   │   │           ├── dto/
+│   │   │   │           ├── event/
+│   │   │   │           ├── exception/
+│   │   │   │           ├── filter/
+│   │   │   │           ├── handler/
+│   │   │   │           ├── listener/
+│   │   │   │           ├── mapper/
+│   │   │   │           ├── model/
+│   │   │   │           ├── publisher/
+│   │   │   │           ├── repository/
+│   │   │   │           ├── service/
+│   │   │   │           └── AnalyticsServiceApp.java
+│   │   ├── test/
+│
+├── infra/
+│   ├── gradle/wrapper/
+│   ├── .gitignore
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── build.gradle.kts
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── settings.gradle.kts
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/
+│   │   │   │       └── elevatefi/
+│   │   │   │           ├── cache/
+│   │   │   │           ├── client/
+│   │   │   │           ├── config/
+│   │   │   │           ├── controller/
+│   │   │   │           ├── dto/
+│   │   │   │           ├── event/
+│   │   │   │           ├── exception/
+│   │   │   │           ├── filter/
+│   │   │   │           ├── handler/
+│   │   │   │           ├── listener/
+│   │   │   │           ├── mapper/
+│   │   │   │           ├── model/
+│   │   │   │           ├── publisher/
+│   │   │   │           ├── repository/
+│   │   │   │           ├── service/
+│   │   │   │           └── InfraServiceApp.java
+│   │   ├── test/
+│
+├── notification_service/
+│   ├── gradle/wrapper/
+│   ├── .gitignore
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── build.gradle.kts
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── settings.gradle.kts
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/
+│   │   │   │       └── elevatefi/
+│   │   │   │           ├── cache/
+│   │   │   │           ├── client/
+│   │   │   │           ├── config/
+│   │   │   │           ├── controller/
+│   │   │   │           ├── dto/
+│   │   │   │           ├── event/
+│   │   │   │           ├── exception/
+│   │   │   │           ├── filter/
+│   │   │   │           ├── handler/
+│   │   │   │           ├── listener/
+│   │   │   │           ├── mapper/
+│   │   │   │           ├── model/
+│   │   │   │           ├── publisher/
+│   │   │   │           ├── repository/
+│   │   │   │           ├── service/
+│   │   │   │           └── NotificationServiceApp.java
+│   │   ├── test/
+│
+├── payment_service/
+│   ├── gradle/wrapper/
+│   ├── .gitignore
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── build.gradle.kts
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── settings.gradle.kts
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/
+│   │   │   │       └── elevatefi/
+│   │   │   │           ├── cache/
+│   │   │   │           ├── client/
+│   │   │   │           ├── config/
+│   │   │   │           ├── controller/
+│   │   │   │           ├── dto/
+│   │   │   │           ├── event/
+│   │   │   │           ├── exception/
+│   │   │   │           ├── filter/
+│   │   │   │           ├── handler/
+│   │   │   │           ├── listener/
+│   │   │   │           ├── mapper/
+│   │   │   │           ├── model/
+│   │   │   │           ├── publisher/
+│   │   │   │           ├── repository/
+│   │   │   │           ├── service/
+│   │   │   │           └── PaymentServiceApp.java
+│   │   ├── test/
+│
+├── post_service/
+│   ├── gradle/wrapper/
+│   ├── .gitignore
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── build.gradle.kts
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── settings.gradle.kts
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/
+│   │   │   │       └── elevatefi/
+│   │   │   │           ├── cache/
+│   │   │   │           ├── client/
+│   │   │   │           ├── config/
+│   │   │   │           ├── controller/
+│   │   │   │           ├── dto/
+│   │   │   │           ├── event/
+│   │   │   │           ├── exception/
+│   │   │   │           ├── filter/
+│   │   │   │           ├── handler/
+│   │   │   │           ├── listener/
+│   │   │   │           ├── mapper/
+│   │   │   │           ├── model/
+│   │   │   │           ├── publisher/
+│   │   │   │           ├── repository/
+│   │   │   │           ├── service/
+│   │   │   │           └── PostServiceApp.java
+│   │   ├── test/
+│
+├── project_service/
+│   ├── gradle/wrapper/
+│   ├── .gitignore
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── build.gradle.kts
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── settings.gradle.kts
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/
+│   │   │   │       └── elevatefi/
+│   │   │   │           ├── cache/
+│   │   │   │           ├── client/
+│   │   │   │           ├── config/
+│   │   │   │           ├── controller/
+│   │   │   │           ├── dto/
+│   │   │   │           ├── event/
+│   │   │   │           ├── exception/
+│   │   │   │           ├── filter/
+│   │   │   │           ├── handler/
+│   │   │   │           ├── listener/
+│   │   │   │           ├── mapper/
+│   │   │   │           ├── model/
+│   │   │   │           ├── publisher/
+│   │   │   │           ├── repository/
+│   │   │   │           ├── service/
+│   │   │   │           └── ProjectServiceApp.java
+│   │   ├── test/
+│
+├── user_service/
+│   ├── gradle/wrapper/
+│   ├── .gitignore
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── build.gradle.kts
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── settings.gradle.kts
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/
+│   │   │   │       └── elevatefi/
+│   │   │   │           ├── cache/
+│   │   │   │           ├── client/
+│   │   │   │           ├── config/
+│   │   │   │           ├── controller/
+│   │   │   │           ├── dto/
+│   │   │   │           ├── event/
+│   │   │   │           ├── exception/
+│   │   │   │           ├── filter/
+│   │   │   │           ├── handler/
+│   │   │   │           ├── listener/
+│   │   │   │           ├── mapper/
+│   │   │   │           ├── model/
+│   │   │   │           ├── publisher/
+│   │   │   │           ├── repository/
+│   │   │   │           ├── service/
+│   │   │   │           └── UserServiceApp.java
+│   │   ├── test/
+│
+├── .gitignore
+├── .gitmodules
+├── README.md
+├── cherry-pick.sh
+├── updated_shell_scripts/
+└── push-all.sh
+```
+
+
