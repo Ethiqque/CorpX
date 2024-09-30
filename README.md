@@ -17,6 +17,7 @@ CorpX enhances startup fundraising by facilitating seamless team coordination an
 * [**Achievement Service**](https://github.com/CorporationX/achievement_service/tree/basilisk-master-bc4) - Manages and tracks user achievements and milestones.
 * [**Notification Service**](https://github.com/CorporationX/notification_service/tree/basilisk-master-bc4) - Handles the delivery of various notifications to users via different channels.
 * [**Account Service**](https://github.com/CorporationX/account_service/tree/basilisk-master-bc4) - Manages account information, settings, and related functionalities for users.
+* [**Infra**](https://github.com/CorporationX/infra) - Microservices configuration service for developers.
 
 ## Features
 
@@ -80,63 +81,38 @@ CorpX enhances startup fundraising by facilitating seamless team coordination an
 │   ├── gradlew
 │   ├── gradlew.bat
 │   ├── settings.gradle.kts
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/
-│   │   │   │   └── com/
-│   │   │   │       └── elevatefi/
-│   │   │   │           ├── cache/
-│   │   │   │           ├── client/
-│   │   │   │           ├── config/
-│   │   │   │           ├── controller/
-│   │   │   │           ├── dto/
-│   │   │   │           ├── event/
-│   │   │   │           ├── exception/
-│   │   │   │           ├── filter/
-│   │   │   │           ├── handler/
-│   │   │   │           ├── listener/
-│   │   │   │           ├── mapper/
-│   │   │   │           ├── model/
-│   │   │   │           ├── publisher/
-│   │   │   │           ├── repository/
-│   │   │   │           ├── service/
-│   │   │   │           └── AnalyticsServiceApp.java
-│   │   ├── test/
+│   └── src/
+│       ├── main/
+│       │   └── java/
+│       │       └── com/
+│       │           └── analytics/
+│       │               ├── client/
+│       │               ├── config/
+│       │               ├── controller/
+│       │               ├── dto/
+│       │               ├── event/
+│       │               ├── exception/
+│       │               ├── filter/
+│       │               ├── handler/
+│       │               ├── listener/
+│       │               ├── mapper/
+│       │               ├── model/
+│       │               ├── publisher/
+│       │               ├── repository/
+│       │               ├── service/
+│       │               └── AnalyticsServiceApp.java
+│       └── test/
 │
 ├── infra/
-│   ├── gradle/wrapper/
 │   ├── .gitignore
-│   ├── Dockerfile
 │   ├── README.md
-│   ├── build.gradle.kts
-│   ├── gradlew
-│   ├── gradlew.bat
-│   ├── settings.gradle.kts
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/
-│   │   │   │   └── com/
-│   │   │   │       └── elevatefi/
-│   │   │   │           ├── cache/
-│   │   │   │           ├── client/
-│   │   │   │           ├── config/
-│   │   │   │           ├── controller/
-│   │   │   │           ├── dto/
-│   │   │   │           ├── event/
-│   │   │   │           ├── exception/
-│   │   │   │           ├── filter/
-│   │   │   │           ├── handler/
-│   │   │   │           ├── listener/
-│   │   │   │           ├── mapper/
-│   │   │   │           ├── model/
-│   │   │   │           ├── publisher/
-│   │   │   │           ├── repository/
-│   │   │   │           ├── service/
-│   │   │   │           └── InfraServiceApp.java
-│   │   ├── test/
+│   ├── docker-compose.yaml
+│   ├── run.sh
+│   └── stop.sh
 │
 ├── notification_service/
 │   ├── gradle/wrapper/
+│   ├── .github/workflows
 │   ├── .gitignore
 │   ├── Dockerfile
 │   ├── README.md
@@ -148,20 +124,17 @@ CorpX enhances startup fundraising by facilitating seamless team coordination an
 │   │   ├── main/
 │   │   │   ├── java/
 │   │   │   │   └── com/
-│   │   │   │       └── elevatefi/
-│   │   │   │           ├── cache/
+│   │   │   │       └── notification/
 │   │   │   │           ├── client/
 │   │   │   │           ├── config/
-│   │   │   │           ├── controller/
 │   │   │   │           ├── dto/
+│   │   │   │           ├── entity/
 │   │   │   │           ├── event/
 │   │   │   │           ├── exception/
-│   │   │   │           ├── filter/
 │   │   │   │           ├── handler/
 │   │   │   │           ├── listener/
-│   │   │   │           ├── mapper/
-│   │   │   │           ├── model/
-│   │   │   │           ├── publisher/
+│   │   │   │           ├── messaging/
+│   │   │   │           ├── property/
 │   │   │   │           ├── repository/
 │   │   │   │           ├── service/
 │   │   │   │           └── NotificationServiceApp.java
@@ -180,7 +153,22 @@ CorpX enhances startup fundraising by facilitating seamless team coordination an
 │   │   ├── main/
 │   │   │   ├── java/
 │   │   │   │   └── com/
-│   │   │   │       └── elevatefi/
+│   │   │   │       └── payment/
+client
+config
+controller
+dto
+enums
+event
+exception
+mapper
+model
+publisher
+repository
+scheduler
+service
+validator
+
 │   │   │   │           ├── cache/
 │   │   │   │           ├── client/
 │   │   │   │           ├── config/
@@ -212,7 +200,25 @@ CorpX enhances startup fundraising by facilitating seamless team coordination an
 │   │   ├── main/
 │   │   │   ├── java/
 │   │   │   │   └── com/
-│   │   │   │       └── elevatefi/
+│   │   │   │       └── post/
+
+client
+config
+controller
+dto
+event
+exception
+filter
+handler
+mapper
+model
+property
+publisher
+repository
+scheduler
+service
+util
+validator
 │   │   │   │           ├── cache/
 │   │   │   │           ├── client/
 │   │   │   │           ├── config/
@@ -244,7 +250,26 @@ CorpX enhances startup fundraising by facilitating seamless team coordination an
 │   │   ├── main/
 │   │   │   ├── java/
 │   │   │   │   └── com/
-│   │   │   │       └── elevatefi/
+│   │   │   │       └── project/
+
+client
+config
+controller
+dto
+event
+exceptions
+filter
+handler
+mapper
+model
+pattern
+property
+publisher
+repository
+service
+util
+validation
+
 │   │   │   │           ├── cache/
 │   │   │   │           ├── client/
 │   │   │   │           ├── config/
@@ -264,6 +289,38 @@ CorpX enhances startup fundraising by facilitating seamless team coordination an
 │   │   ├── test/
 │
 ├── user_service/
+│   ├── gradle/wrapper/
+│   ├── .gitignore
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── build.gradle.kts
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── settings.gradle.kts
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/
+│   │   │   │       └── elevatefi/
+│   │   │   │           ├── cache/
+│   │   │   │           ├── client/
+│   │   │   │           ├── config/
+│   │   │   │           ├── controller/
+│   │   │   │           ├── dto/
+│   │   │   │           ├── event/
+│   │   │   │           ├── exception/
+│   │   │   │           ├── filter/
+│   │   │   │           ├── handler/
+│   │   │   │           ├── listener/
+│   │   │   │           ├── mapper/
+│   │   │   │           ├── model/
+│   │   │   │           ├── publisher/
+│   │   │   │           ├── repository/
+│   │   │   │           ├── service/
+│   │   │   │           └── UserServiceApp.java
+│   │   ├── test/
+│
+├── account_service/
 │   ├── gradle/wrapper/
 │   ├── .gitignore
 │   ├── Dockerfile
